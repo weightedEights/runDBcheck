@@ -15,7 +15,7 @@ import sys
 
 class RunDBCheck(object):
 
-    VERSION = '$Id: RunDBCheck.py 03Aug2017 J.Arndt - Sondrestrom Radar $'
+    VERSION = 'RunDBCheck.py 03Aug2017 J.Arndt - Sondrestrom Radar'
     base_directory = "RADAR_DATA"
 
     def __init__(self):
