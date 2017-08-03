@@ -4,8 +4,8 @@
 from __future__ import print_function
 
 """
-This script will write a timestamp to a time rotating log file. The purpose is to use this as a test bed for
-implementing the rotating log file handler in other projects.
+This script will contain utilities for checking the continuity of the radar runs database. Primarily that the file
+numbers are continuous. If there is a discontinuity, highlight the boundary experiments. 
 """
 
 import os
