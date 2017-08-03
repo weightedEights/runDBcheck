@@ -1,0 +1,276 @@
+* File: dtc1.tuf
+*
+-1     0  10831  0  0      IPP   1
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  17662   NsPulse low word
+-2     5      0  6  0      Sample index MSW
+-2     6      0  7  2000  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  1000   8231  0  0      Data window, 16462 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  11423  0  0      IPP   2
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  19662   NsPulse low word
+-2     5      0  6  0      Sample index MSW
+-2     6      0  7  23662  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  1000   9231  0  0      Data window, 18462 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  22769  0  0      IPP   3
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  43538   NsPulse low word
+-2     5      0  6  0      Sample index MSW
+-2     6      0  7  46508  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  1000   21169  0  0      Data window, 42338 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  12613  0  0      IPP   4
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  19226   NsPulse low word
+-2     5      0  6  1      Sample index MSW
+-2     6      0  7  28510  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   9013  0  0      Data window, 18026 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  13217  0  0      IPP   5
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  20434   NsPulse low word
+-2     5      0  6  1      Sample index MSW
+-2     6      0  7  53736  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   9617  0  0      Data window, 19234 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  13807  0  0      IPP   6
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  21614   NsPulse low word
+-2     5      0  6  2      Sample index MSW
+-2     6      0  7  14634  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   10207  0  0      Data window, 20414 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  14407  0  0      IPP   7
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  22814   NsPulse low word
+-2     5      0  6  2      Sample index MSW
+-2     6      0  7  42248  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   10807  0  0      Data window, 21614 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  15013  0  0      IPP   8
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  24026   NsPulse low word
+-2     5      0  6  3      Sample index MSW
+-2     6      0  7  5526  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   11413  0  0      Data window, 22826 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  15601  0  0      IPP   9
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  25202   NsPulse low word
+-2     5      0  6  3      Sample index MSW
+-2     6      0  7  35552  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   12001  0  0      Data window, 24002 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  12037  0  0      IPP  10
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  20074   NsPulse low word
+-2     5      0  6  4      Sample index MSW
+-2     6      0  7  1218  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   9437  0  0      Data window, 18874 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  16811  0  0      IPP  11
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  27622   NsPulse low word
+-2     5      0  6  4      Sample index MSW
+-2     6      0  7  25290  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   13211  0  0      Data window, 26422 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  17393  0  0      IPP  12
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  28786   NsPulse low word
+-2     5      0  6  4      Sample index MSW
+-2     6      0  7  58912  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   13793  0  0      Data window, 27586 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  17987  0  0      IPP  13
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  29974   NsPulse low word
+-2     5      0  6  5      Sample index MSW
+-2     6      0  7  28162  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   14387  0  0      Data window, 28774 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  18587  0  0      IPP  14
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  31174   NsPulse low word
+-2     5      0  6  5      Sample index MSW
+-2     6      0  7  64136  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   14987  0  0      Data window, 29974 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  19181  0  0      IPP  15
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  32362   NsPulse low word
+-2     5      0  6  6      Sample index MSW
+-2     6      0  7  35774  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   15581  0  0      Data window, 31162 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  19793  0  0      IPP  16
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  33586   NsPulse low word
+-2     5      0  6  7      Sample index MSW
+-2     6      0  7  8600  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   16193  0  0      Data window, 32386 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  20389  0  0      IPP  17
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  34778   NsPulse low word
+-2     5      0  6  7      Sample index MSW
+-2     6      0  7  48186  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   16789  0  0      Data window, 33578 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  20981  0  0      IPP  18
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  35962   NsPulse low word
+-2     5      0  6  8      Sample index MSW
+-2     6      0  7  23428  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   17381  0  0      Data window, 34762 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  21569  0  0      IPP  19
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  37138   NsPulse low word
+-2     5      0  6  8      Sample index MSW
+-2     6      0  7  65392  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   17969  0  0      Data window, 35938 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  22171  0  0      IPP  20
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  40342   NsPulse low word
+-2     5      0  6  9      Sample index MSW
+-2     6      0  7  42994  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   19571  0  0      Data window, 39142 samples
+-9     0      0  0  0      end of ipp
+*
+-1     0  16217  0  0      IPP  21
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  26434   NsPulse low word
+-2     5      0  6  10      Sample index MSW
+-2     6      0  7  21800  Sample index LSW
+12     7      5  0  0      Beam code trigger
+11    20      5  0  0      Load header/sync Rx
+ 7   390   600  0  0      Pulse window, 1200 samples
+ 0   445    487  0  0      Beam
+ 7  2000   12617  0  0      Data window, 25234 samples
+-9     0      0  0  0      end of ipp
+*
+-99    0      0  0  0  end

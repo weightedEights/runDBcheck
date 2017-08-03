@@ -1,0 +1,18 @@
+* File: txc.tuf
+*
+-1     0  66000  0  0      IPP   0
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  1024   NsPulse Low word
+12     5      5  0  0      Beam code trigger
+11    19      5  0  0      Load header/sync Rx
+ 7   434    512  0  0      TX pulse sampling 1024 samples
+ 0   442    330  0  0      Beam
+ 1   450    320  0  0      RF
+-2   450      0  0  1      TX Profile 1
+-2   770      0  0  0      TX Profile 0, zero phase
+ 3 63350   2500  0  0      Cal on
+ 4 65900      1  0  0      Surveillance Radar on
+-9     0      0  0  0      end of ipp
+*
+-99    0      0  0  0  end

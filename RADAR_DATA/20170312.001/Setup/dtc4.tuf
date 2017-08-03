@@ -1,0 +1,45 @@
+* File: dtc4.tuf
+*
+-1     0  13000  0  0      IPP   0
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  2500   NsPulse low word
+-2     5      0  6  0x03FF Code MSW
+-2     6      0  7  0x0F33 Code LSW
+12     7      5  0  0      Beam code trigger
+11    19      5  0  0      Load header/sync Rx
+*t 0   442    382  0  0      Beam
+*t 1   450    372  0  0      RF
+*t-2   450      0  0  1      TX Profile 1
+*t 2   770     52  0  0      Freq Select
+*t-2   770      0  0  2      TX Profile 2
+*t 5   790      8  0  0      Phase 180
+*t 5   806      4  0  0      Phase 180
+*t 5   814      4  0  0      Phase 180
+*t-2   822      0  0  0      TX Profile 0, zero phase
+ 7   520   5000  0  0      Data window, 2500 samples
+ 3 10608   2092  0  0      Cal on
+ 4 12900      1  0  0      Surveillance Radar on
+-9     0      0  0  0      end of ipp
+*
+-1     0  13000  0  0      IPP   1
+-2     2      0  3  2      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  1500   NsPulse low word
+-2     5      0  6  0x03FF Code MSW
+-2     6      0  7  0x0F33 Code LSW
+12     7      5  0  0      Beam code trigger
+11    19      5  0  0      Load header/sync Rx
+*t 0   442    382  0  0      Beam
+*t 1   450    372  0  0      RF
+*t 2   450    320  0  0      Freq Select
+*t-2   450      0  0  2      TX Profile 2
+*t-2   770      0  0  1      TX Profile 1
+*t-2   822      0  0  0      TX Profile 0, zero phase
+ 7  8200   1500  0  0      Noise window, 750 samples
+ 3 10608   2092  0  0      Cal on
+ 7 10908   1500  0  0      Cal window, 750 samples
+ 4 12900      1  0  0      Surveillance Radar on
+-9     0      0  0  0      end of ipp
+*
+-99    0      0  0  0  end

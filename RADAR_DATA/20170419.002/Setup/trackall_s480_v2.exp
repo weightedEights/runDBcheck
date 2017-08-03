@@ -1,0 +1,74 @@
+[File]
+Name=trackall_s480_v2
+Description=Prime length ipps, 480 uSec pulse
+
+[Log Info]
+Users=E Kendall, Asti Bhatt (SRI)
+Purpose=Testing trackall_s480_v2
+Comment=First engineering test of slightly modified mode and tracking asteroid 2014-JO25 and some other targets
+
+[Common Parameters]
+npulsesint=294
+recordsperfile=10
+
+[Hosts]
+TXC=Transmitter Control
+ACC=Antenna Control
+DTC1=Frequency 1
+
+[Modes]
+0=Prime length ipps, 480 uSec pulse
+
+[Common Mode:0]
+beamcodefile=trackall_s480_v2.bco
+nbeamcodes=1
+
+[TXC Mode:0]
+txenabled=1
+tufile=txc.tuf
+
+[dtc1 Mode:0]
+writedisplayrecord=1
+modes=pulse data disp
+RxAttenuation=0
+txenabled=0
+tufile=dtc1.tuf
+rxconfig=blackman_00.50usec.rxc
+rxfrequency=2.000e+07
+headerenable=1
+maxsamples=44338
+PulseWidth=480.0
+TxBaud=1
+rangecorrection=0
+rxfrequency=20000000
+txfrequency=txcfrequency1
+
+[dtc1 Mode:0,pulse]
+displayexclude=1
+name=TxPulse
+mode=raw11
+modegroup=1
+indexsample=0
+ngates=1200
+firstrange=-9068.721854
+
+[dtc1 Mode:0,data]
+displayexclude=1
+name=Data
+mode=raw12
+modegroup=1
+indexsample=1200
+npulses=21
+ngates=705594
+firstrange=-67528.251165
+
+[dtc1 Mode:0,disp]
+name=Data
+mode=fft
+modegroup=1
+indexsample=1200
+nlags=65536
+ngates=1
+fftsign=-1
+firstrange=0
+

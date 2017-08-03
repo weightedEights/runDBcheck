@@ -1,0 +1,220 @@
+[File]
+Name=pl_pl_s480_v01
+Description=plasmaline+plasmaline+s
+
+[Log Info]
+Users=E Kendall (SRI)
+Purpose=pl_pl_s480_v01
+Comment=Nothing
+
+[Common Parameters]
+npulsesint=306
+recordsperfile=20
+
+[include data]
+dtc3:/Setup/Ambiguity/Lp_480_4=a_lp_480_4.h5
+
+[Hosts]
+TXC=Transmitter Control
+ACC=Antenna Control
+DTC1=Upshifted plasmaline
+DTC2=Downshifted plasmaline
+DTC3=Single 480 uSec Pulse
+
+[Modes]
+0=plasmaline + plasmaline + long pulse
+
+[Common Mode:0]
+beamcodefile=pl_pl_s480_v01.bco
+nbeamcodes=1
+
+[rxconfig mode:0]
+ifselector1=2
+ifselector2=3
+ifselector3=1
+ifselector4=1
+synth1=378e6,13
+synth2=392e6,13
+
+[TXC Mode:0]
+txenabled=1
+tufile=txc.tuf
+
+[DTC1 Mode:0]
+writedisplayrecord=1
+modes=data raw cal noise
+fftsign=-1
+RxAttenuation=0
+txenabled=0
+tufile=dtc1.tuf
+rxconfig=blackman_00.28usec.rxc
+rxfrequency=12e6
+headerenable=1
+maxsamples=42000
+PulseWidth=480.0
+rangecorrection=62.1
+txfrequency=txcfrequency1
+rxchannel=upshiftedplasmaline
+tuningmethod=2
+
+[DTC1 Mode:0,data]
+name=Data
+mode=plffts
+modegroup=1
+indexsample=0
+ngates=32
+npowergates=32526
+nlags=1024
+gatestep=1024
+firstrange=-41221.462975
+
+[DTC1 Mode:0,raw]
+displayexclude=1
+name=Data
+mode=raw11
+modegroup=1
+indexsample=0
+ngates=33550
+firstrange=-41221.462975
+
+[DTC1 Mode:0,cal]
+name=Cal
+mode=s
+modegroup=1
+poweronly=1
+indexsample=37550
+ngates=4000
+nlags=1
+substep=1
+subint=1
+firstrange=4468406.586490
+
+[DTC1 Mode:0,noise]
+name=Noise
+mode=plffts
+modegroup=1
+indexsample=33550
+ngates=2
+npowergates=2976
+nlags=1024
+gatestep=1024
+firstrange=3996233.465140
+
+[DTC2 Mode:0]
+writedisplayrecord=1
+modes=data raw noise cal
+fftsign=-1
+RxAttenuation=0
+txenabled=0
+tufile=dtc2.tuf
+rxconfig=blackman_00.28usec.rxc
+rxfrequency=18e6
+headerenable=1
+maxsamples=42000
+PulseWidth=480.0
+rangecorrection=62.1
+txfrequency=txcfrequency1
+rxchannel=downshiftedplasmaline
+tuningmethod=1
+
+[DTC2 Mode:0,data]
+name=Data
+mode=plffts
+modegroup=1
+indexsample=0
+ngates=32
+npowergates=32526
+nlags=1024
+gatestep=1024
+firstrange=-41221.462975
+
+[DTC2 Mode:0,raw]
+displayexclude=1
+name=Data
+mode=raw11
+modegroup=1
+indexsample=0
+ngates=33550
+firstrange=-41221.462975
+
+[DTC2 Mode:0,cal]
+name=Cal
+mode=s
+modegroup=1
+poweronly=1
+indexsample=37550
+ngates=4000
+nlags=1
+substep=1
+subint=1
+firstrange=4468406.586490
+
+[DTC2 Mode:0,noise]
+name=Noise
+mode=plffts
+modegroup=1
+indexsample=33550
+ngates=2
+npowergates=2976
+nlags=1024
+gatestep=1024
+firstrange=3996233.465140
+
+[DTC3 Mode:0]
+writedisplayrecord=1
+modes=data raw cal noise
+RxAttenuation=0
+txenabled=0
+tufile=dtc3.tuf
+rxconfig=blackman_04.00usec.rxc
+rxfrequency=20e6
+headerenable=1
+maxsamples=3700
+PulseWidth=480.0
+rangecorrection=1141.7
+txfrequency=txcfrequency1
+
+[DTC3 Mode:0,data]
+name=Data
+ambiguity=/Setup/Ambiguity/Lp_480_4
+mode=s
+modegroup=1
+indexsample=0
+ngates=2480
+nlags=120
+substep=1
+subint=1
+firstrange=-73449.152210
+
+[DTC3 Mode:0,raw]
+displayexclude=1
+name=Data
+mode=raw11
+modegroup=1
+indexsample=0
+ngates=2600
+firstrange=-73449.152210
+
+[DTC3 Mode:0,cal]
+name=Cal
+mode=s
+modegroup=1
+poweronly=1
+indexsample=3112
+ngates=512
+nlags=1
+substep=1
+subint=1
+firstrange=4468406.586490
+
+[DTC3 Mode:0,noise]
+name=Noise
+mode=s
+modegroup=1
+indexsample=2600
+ngates=392
+nlags=120
+substep=1
+subint=1
+firstrange=3996233.465140
+

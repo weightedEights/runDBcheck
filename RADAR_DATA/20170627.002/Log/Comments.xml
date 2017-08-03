@@ -1,0 +1,120 @@
+<comments experimentid="20170627.002">
+	<totalcomments>13</totalcomments>
+	<comment>
+		<index>0</index>
+		<sourceid>sys</sourceid>
+		<text>Start of experiment</text>
+		<source>system</source>
+		<time>18:28:33</time>
+		<date>20170627</date>
+		<filenumber>138978</filenumber>
+	</comment>
+	<comment>
+		<index>1</index>
+		<sourceid>sys</sourceid>
+		<text>RF: off</text>
+		<source>system</source>
+		<time>18:28:36</time>
+		<date>20170627</date>
+		<filenumber>138978</filenumber>
+	</comment>
+	<comment>
+		<index>2</index>
+		<sourceid>sys</sourceid>
+		<text>Record: off</text>
+		<source>system</source>
+		<time>18:28:36</time>
+		<date>20170627</date>
+		<filenumber>138978</filenumber>
+	</comment>
+	<comment>
+		<index>3</index>
+		<sourceid>sys</sourceid>
+		<text>RF: on</text>
+		<source>system</source>
+		<time>18:29:17</time>
+		<date>20170627</date>
+		<filenumber>138978</filenumber>
+	</comment>
+	<comment>
+		<index>4</index>
+		<sourceid>sys</sourceid>
+		<text>Record: on</text>
+		<source>system</source>
+		<time>18:29:20</time>
+		<date>20170627</date>
+		<filenumber>138978</filenumber>
+	</comment>
+	<comment>
+		<index>5</index>
+		<sourceid>sys</sourceid>
+		<text>Time out of sync on dtcs. Re-synchronized.</text>
+		<source>system</source>
+		<time>18:30:11</time>
+		<date>20170627</date>
+		<filenumber>138978</filenumber>
+	</comment>
+	<comment>
+		<index>6</index>
+		<sourceid>sys</sourceid>
+		<text>Forced file number increment because of file and/or number of records discrepancy between synchronized dtcs</text>
+		<source>system</source>
+		<time>18:30:20</time>
+		<date>20170627</date>
+		<filenumber>138979</filenumber>
+	</comment>
+	<comment>
+		<index>7</index>
+		<sourceid>sys</sourceid>
+		<text>Forced file number increment because of file and/or number of records discrepancy between synchronized dtcs</text>
+		<source>system</source>
+		<time>18:30:30</time>
+		<date>20170627</date>
+		<filenumber>138980</filenumber>
+	</comment>
+	<comment>
+		<index>8</index>
+		<sourceid>sys</sourceid>
+		<text>Filenumber incremented</text>
+		<source>system</source>
+		<time>18:34:06</time>
+		<date>20170627</date>
+		<filenumber>138981</filenumber>
+	</comment>
+	<comment>
+		<index>9</index>
+		<sourceid>JAA</sourceid>
+		<text>RF signal generator birdie was xmiting, just now turned off</text>
+		<source>operator</source>
+		<time>18:34:09</time>
+		<date>20170627</date>
+		<filenumber>138981</filenumber>
+	</comment>
+	<comment>
+		<index>10</index>
+		<sourceid>sys</sourceid>
+		<text>Filenumber incremented</text>
+		<source>system</source>
+		<time>18:37:29</time>
+		<date>20170627</date>
+		<filenumber>138982</filenumber>
+	</comment>
+	<comment>
+		<index>11</index>
+		<sourceid>POSTOP</sourceid>
+		<text>This comment appended after run failure. The house power genset failed, requiring an experiment restart.</text>
+		<source>POSTOP</source>
+		<time>18:37:35</time>
+		<date>20170627</date>
+		<filenumber>138982</filenumber>
+	</comment>
+	<comment>
+		<index>12</index>
+		<sourceid>sys</sourceid>
+		<text>End of experiment</text>
+		<source>system</source>
+		<time>18:37:45</time>
+		<date>20170627</date>
+		<filenumber>138982</filenumber>
+	</comment>
+</comments>

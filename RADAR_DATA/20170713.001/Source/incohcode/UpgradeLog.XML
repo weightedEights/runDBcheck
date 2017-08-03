@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="incohcode">
+</Property><Property Name="Solution File" Value="\\jjlt\john\src\python\modes\modes\incohcode\incohcode.sln">
+</Property><Property Name="User Options File" Value="\\jjlt\john\src\python\modes\modes\incohcode\incohcode.suo">
+</Property><Property Name="Date" Value="Monday, February 06, 2017">
+</Property><Property Name="Time" Value="16:42 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="incohcode.sln" Description="File successfully backed up as \\jjlt\john\src\python\modes\modes\incohcode\incohcode.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="incohcode.suo" Description="File successfully backed up as \\jjlt\john\src\python\modes\modes\incohcode\incohcode.suo.old">
+</Event><Event ErrorLevel="0" Project="incohcode" Source="incohcode\incohcode.vcproj" Description="Converting project file '\\jjlt\john\src\python\modes\modes\incohcode\incohcode\incohcode.vcproj'.">
+</Event><Event ErrorLevel="1" Project="incohcode" Source="incohcode\incohcode.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="incohcode" Source="incohcode\incohcode.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="incohcode" Source="incohcode\incohcode.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="incohcode" Source="incohcode\incohcode.vcproj" Description="MSB8012: $(TargetExt) ('.dll') does not match the Linker's OutputFile property value '\\jjlt\john\src\python\modes\modes\incohcode\Debug\incohcode.pyd' ('.pyd') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetExt) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="incohcode" Source="incohcode\incohcode.vcproj" Description="MSB8012: $(TargetPath) ('\\jjlt\john\src\python\modes\modes\incohcode\Debug\incohcode.dll') does not match the Linker's OutputFile property value '\\jjlt\john\src\python\modes\modes\incohcode\Debug\incohcode.pyd' ('\\jjlt\john\src\python\modes\modes\incohcode\Debug\incohcode.pyd') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="incohcode" Source="incohcode\incohcode.vcproj" Description="Done converting to new project file '\\jjlt\john\src\python\modes\modes\incohcode\incohcode\incohcode.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="incohcode" Source="incohcode\incohcode.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="incohcode.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="incohcode.sln" Description="Converted">
+</Event></UpgradeLog>

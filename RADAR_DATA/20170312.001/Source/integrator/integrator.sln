@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "integrator", "integrator\integrator.vcxproj", "{B6DF4715-367F-450C-A8E8-28884F41C4ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6DF4715-367F-450C-A8E8-28884F41C4ED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B6DF4715-367F-450C-A8E8-28884F41C4ED}.Debug|Win32.Build.0 = Debug|Win32
+		{B6DF4715-367F-450C-A8E8-28884F41C4ED}.Release|Win32.ActiveCfg = Release|Win32
+		{B6DF4715-367F-450C-A8E8-28884F41C4ED}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

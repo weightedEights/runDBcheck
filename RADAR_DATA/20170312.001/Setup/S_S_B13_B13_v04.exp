@@ -1,0 +1,227 @@
+[File]
+Name=S_S_B13_B13_v04
+Description=s+s+b13+b13
+
+[Log Info]
+Users=G. Perry (U. of Calgary) and R. Varney (SRI)
+Purpose=Measurements to study ion upflow/outflow coordinated with the e-POP spacecraft.
+Comment=This experiment will use dual longpulses and the antenna will cycle through 3 positions near overhead.
+
+[antenna]
+file=3P311.ant
+firstevent=1
+
+[Common Parameters]
+npulsesint=230
+recordsperfile=250
+
+[copy files]
+setup=AmbFuncFull*.h5
+
+[include data]
+dtc1:/Setup/Ambiguity/Lp_320_7=AmbFuncLp_320_7.h5
+dtc2:/Setup/Ambiguity/Lp_320_7=AmbFuncLp_320_7.h5
+dtc3:/Setup/Ambiguity/Bc13_4_2=AmbFuncBc13_4_2.h5
+dtc4:/Setup/Ambiguity/Bc13_4_2=AmbFuncBc13_4_2.h5
+
+[Hosts]
+TXC=Transmitter Control
+ACC=Antenna Control
+DTC1=Single Pulse
+DTC2=Single Pulse
+DTC3=Barker Code
+DTC4=Barker Code
+
+[Modes]
+0=long pulse + long pulse + barker code + barker code
+
+[Common Mode:0]
+beamcodefile=S_S_B13_B13_v04.bco
+nbeamcodes=1
+
+[TXC Mode:0]
+txenabled=1
+tufile=txc.tuf
+
+[DTC1 Mode:0]
+writedisplayrecord=1
+modes=data cal noise
+RxAttenuation=0
+txenabled=0
+tufile=dtc1.tuf
+rxconfig=blackman_07.00usec.rxc
+rxfrequency=20e6
+headerenable=1
+maxsamples=1400
+PulseWidth=320.0
+rangecorrection=2514.4
+txfrequency=txcfrequency1
+
+[DTC1 Mode:0,data]
+name=Data
+ambiguity=/Setup/Ambiguity/Lp_320_7
+mode=s
+modegroup=1
+indexsample=0
+ngates=1329
+nlags=32
+substep=1
+subint=1
+firstrange=-61457.453890
+
+[DTC1 Mode:0,cal]
+name=Cal
+mode=s
+modegroup=2
+poweronly=1
+indexsample=256
+ngates=256
+nlags=1
+substep=1
+subint=1
+firstrange=3463802.059732
+
+[DTC1 Mode:0,noise]
+name=Noise
+mode=s
+modegroup=2
+indexsample=0
+ngates=224
+nlags=32
+substep=1
+subint=1
+firstrange=2881605.106296
+
+[DTC2 Mode:0]
+writedisplayrecord=1
+modes=data cal noise
+RxAttenuation=0
+txenabled=0
+tufile=dtc2.tuf
+rxconfig=blackman_07.00usec.rxc
+rxfrequency=20.6e6
+headerenable=1
+maxsamples=1400
+PulseWidth=320.0
+rangecorrection=2514.4
+txfrequency=txcfrequency2
+
+[DTC2 Mode:0,data]
+name=Data
+ambiguity=/Setup/Ambiguity/Lp_320_7
+mode=s
+modegroup=1
+indexsample=0
+ngates=1329
+nlags=32
+substep=1
+subint=1
+firstrange=-61457.453890
+
+[DTC2 Mode:0,cal]
+name=Cal
+mode=s
+modegroup=2
+poweronly=1
+indexsample=256
+ngates=256
+nlags=1
+substep=1
+subint=1
+firstrange=3463802.059732
+
+[DTC2 Mode:0,noise]
+name=Noise
+mode=s
+modegroup=2
+indexsample=0
+ngates=224
+nlags=32
+substep=1
+subint=1
+firstrange=2881605.106296
+
+[DTC3 Mode:0]
+writedisplayrecord=1
+modes=data cal noise
+RxAttenuation=0
+txenabled=0
+tufile=dtc3.tuf
+rxconfig=blackman_02.00usec.rxc
+ambiguity=/Setup/Ambiguity/Bc13_4_2
+rxfrequency=20.0e6
+headerenable=1
+maxsamples=4100
+PulseWidth=52.0
+codelength=26
+baud=13
+txbaud=4.0
+rangecorrection=543.4
+txfrequency=txcfrequency1
+
+[DTC3 Mode:0,data]
+name=Data
+mode=cohcode
+modegroup=1
+indexsample=0
+ngates=2474
+firstrange=-37773.849708
+
+[DTC3 Mode:0,cal]
+name=Cal
+mode=cohcode
+modegroup=2
+indexsample=750
+ngates=724
+firstrange=1474379.308444
+
+[DTC3 Mode:0,noise]
+name=Noise
+mode=cohcode
+modegroup=2
+indexsample=0
+ngates=724
+firstrange=1113429.189012
+
+[DTC4 Mode:0]
+writedisplayrecord=1
+modes=data cal noise
+RxAttenuation=0
+txenabled=0
+tufile=dtc4.tuf
+rxconfig=blackman_02.00usec.rxc
+rxfrequency=20.6e6
+headerenable=1
+maxsamples=4100
+PulseWidth=52.0
+codelength=26
+baud=13
+txbaud=4.0
+rangecorrection=543.4
+txfrequency=txcfrequency2
+
+[DTC4 Mode:0,data]
+name=Data
+ambiguity=/Setup/Ambiguity/Bc13_4_2
+mode=cohcode
+modegroup=1
+indexsample=0
+ngates=2474
+firstrange=-37773.849708
+
+[DTC4 Mode:0,cal]
+name=Cal
+mode=cohcode
+modegroup=2
+indexsample=750
+ngates=724
+firstrange=1474379.308444
+
+[DTC4 Mode:0,noise]
+name=Noise
+mode=cohcode
+modegroup=2
+indexsample=0
+ngates=724
+firstrange=1113429.189012
+

@@ -1,0 +1,14 @@
+* File: dtc2.tuf
+*
+-1     0  66000  0  0      IPP   0
+-2     2      0  3  1      Modegroup
+-2     3      0  4  0      NsPulse high word
+-2     4      0  5  41550  NsPulse low word
+12     7      5  0  0      Beam code trigger
+11    19      5  0  0      Load header/sync Rx
+ 7   415   9394  0  0      Data window, 33550 samples
+ 7 61350   1120  0  0      Noise window, 4000 samples
+ 7 63550   1120  0  0      Cal window, 4000 samples
+-9     0      0  0  0      end of ipp
+*
+-99    0      0  0  0  end

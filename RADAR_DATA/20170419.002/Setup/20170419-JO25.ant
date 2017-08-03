@@ -1,0 +1,3 @@
+dwell(event=1,az1=2.7275,el1=90.0,t1=5,az2=2.7275,el2=90.0,t2=-1,next=2)
+table(event=2,filename="20170419-2014-JO25.azelt",satMinRange=1753113,satMaxRange=2304949,rcs=2.116,next=3)
+dwell(event=3,az1=2.7275,el1=90.0,t1=5,az2=2.7275,el2=90.0,t2=-1,next=3)
