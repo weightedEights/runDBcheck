@@ -71,7 +71,7 @@ class RunDBCheck(object):
         """Check RUNS.DB file Number continuity"""
         print("Will check directory: {}".format(path))
         if not os.path.exists(path):
-            raise Exception('ERROR check_continuity: incorrect path')
+            raise Exception('ERROR: check_continuity: incorrect path')
         else:
             print("Path exists.")
 
@@ -80,22 +80,31 @@ class RunDBCheck(object):
         """Check specified experiments for log.html file"""
         path = args[0]
         if not os.path.exists(path):
-            raise Exception('ERROR path does not exist')
+            raise Exception('ERROR: path does not exist')
+
+        print("Checking directory: ", path)
 
         try:
             start = args[1]
-            print(start)
+            if os.path.exists(os.path.join(path, start)):
+                print("Starting experiment: ", start)
+            else:
+                raise Exception('ERROR: START experiment does not exist')
         except IndexError:
             pass
 
         try:
             stop = args[2]
-            print(stop)
+            if os.path.exists(os.path.join(path, stop)):
+                print("Ending experiment: ", stop)
+            else:
+                raise Exception('ERROR: STOP experiment does not exist')
         except IndexError:
             pass
 
         print(args)
-        # print(dI for dI in os.listdir(args[0]) if os.path.isdir(os.path.join(self.base_directory, dI)))
+        list_dir = [dI for dI in os.listdir(path)]
+        print(list_dir)
 
     @staticmethod
     def list_directories(self):
