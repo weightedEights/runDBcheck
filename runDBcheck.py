@@ -40,13 +40,12 @@ class RunDBCheck(object):
 
         parser.add_argument('-v', '--version', action='store_true', help='Print version')
         parser.add_argument('-c', '--continuity', action='store', dest='check_continuity', metavar='PATH',
-                            help='Check file number continuity within RUNS.DB. Path in posix format: "./directory/"')
-
-        # utility_group.add_argument('-s', '--get-sensor-status', help='Get sensor status', action='store_true',
-        #                            dest='get_sensor_status')
-        # utility_group.add_argument('--add-sensor-availability', nargs=4,
-        #                            metavar=('START', 'END', 'STATUS', 'NOTES'),
-        #                            dest='add_sensor_availability', help='Add an availability entry for sensor')
+                            help='Check file number continuity within RUNS.DB.')
+        parser.add_argument('-r', '--experiment-range', nargs='+', metavar=('PATH', 'START'),
+                            default='allOfThem', dest='log_html_check',
+                            help='Check range of experiments for ./log/log.html. If no starting directory is specified,'
+                                 ' will check whole parent directory. If no stopping directory, will check from start'
+                                 ' to end.')
 
         args = parser.parse_args(sys.argv[1:])
 
@@ -55,6 +54,8 @@ class RunDBCheck(object):
                 self.version()
             elif args.check_continuity:
                 self.check_continuity(args.check_continuity)
+            elif args.log_html_check:
+                self.log_html_check(args.log_html_check)
 
         except Exception as e:
             print(e.message)
@@ -65,13 +66,36 @@ class RunDBCheck(object):
         print(RunDBCheck.VERSION)
         sys.exit(0)
 
-    def check_continuity(self, path):
+    @staticmethod
+    def check_continuity(path):
         """Check RUNS.DB file Number continuity"""
         print("Will check directory: {}".format(path))
         if not os.path.exists(path):
             raise Exception('ERROR check_continuity: incorrect path')
         else:
             print("Path exists.")
+
+    @staticmethod
+    def log_html_check(args):
+        """Check specified experiments for log.html file"""
+        path = args[0]
+        if not os.path.exists(path):
+            raise Exception('ERROR path does not exist')
+
+        try:
+            start = args[1]
+            print(start)
+        except IndexError:
+            pass
+
+        try:
+            stop = args[2]
+            print(stop)
+        except IndexError:
+            pass
+
+        print(args)
+        # print(dI for dI in os.listdir(args[0]) if os.path.isdir(os.path.join(self.base_directory, dI)))
 
     @staticmethod
     def list_directories(self):
