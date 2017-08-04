@@ -30,7 +30,6 @@ import sys
 class RunDBCheck(object):
 
     VERSION = 'RunDBCheck.py - 03Aug2017 J.Arndt - Sondrestrom Radar'
-    base_directory = "RADAR_DATA"
 
     def __init__(self):
         self.debug = False
@@ -77,38 +76,52 @@ class RunDBCheck(object):
 
     @staticmethod
     def log_html_check(args):
-        """Check specified experiments for log.html file"""
+        """Check specified experiments for log.html file
+        The default experiment directory structure will be assumed..
+        <path>/experiment/Log/experiment.log.html
+        """
+        # define log file suffix
+        suffix = ".log.html"
+
+        # check if user-supplied path exists
         path = args[0]
         if not os.path.exists(path):
             raise Exception('ERROR: path does not exist')
 
-        print("Checking directory: ", path)
+        print("Checking directory: {} ...".format(path))
 
+        # check if START experiment is supplied
         try:
             start = args[1]
             if os.path.exists(os.path.join(path, start)):
-                print("Starting experiment: ", start)
+                # print("Starting experiment: ", start)
+                pass
             else:
                 raise Exception('ERROR: START experiment does not exist')
         except IndexError:
             pass
 
+        # check if STOP experiment is supplied
         try:
             stop = args[2]
             if os.path.exists(os.path.join(path, stop)):
-                print("Ending experiment: ", stop)
+                # print("Ending experiment: ", stop)
+                pass
             else:
                 raise Exception('ERROR: STOP experiment does not exist')
         except IndexError:
             pass
 
-        print(args)
-        list_dir = [dI for dI in os.listdir(path)]
-        print(list_dir)
+        # create list of all experiment directories
+        list_dir = [d for d in os.listdir(path)]
 
-    @staticmethod
-    def list_directories(self):
-        return (dI for dI in os.listdir(self.base_directory) if os.path.isdir(os.path.join(self.base_directory, dI)))
+        # check if the log file exists for each experiment directory. if not, flag it.
+        for exp in list_dir:
+            if os.path.exists(os.path.join(path, exp, "Log", exp + suffix)):
+                print("Experiment {} log exists.".format(exp))
+            else:
+                print("Experiment {} log IS MISSING. ---".format(exp))
+
 
 if __name__ == '__main__':
     c = RunDBCheck()
