@@ -67,6 +67,20 @@ class RunDBCheck(object):
         sys.exit(0)
 
     @staticmethod
+    def runs_db_reader(path):
+        print("done.")
+        db_actual = {}
+        with open(path) as fin:
+            for line in fin:
+                if line[0] == '[':
+                    new_key = line.rstrip()
+                    db_actual[new_key] = []
+                else:
+                    db_actual[new_key] = line.rstrip()
+
+        print(db_actual.sorted())
+
+    @staticmethod
     def check_continuity(path):
         """Check RUNS.DB file Number continuity"""
         print("Will check directory: {}".format(path))
@@ -77,14 +91,11 @@ class RunDBCheck(object):
             raise Exception('ERROR: check_continuity: incorrect path')
 
         if os.path.exists(full_runs_path) and os.path.isfile(full_runs_path):
-            print("RUNS.DB found. Good job.")
-            # call database checker here
+            print("RUNS.DB found. Calling reader..")
+            RunDBCheck.runs_db_reader(full_runs_path)
 
         else:
             raise Exception('ERROR: check_continuity: RUNS.DB not found.')
-
-    def runs_db_reader(self):
-        pass
 
     @staticmethod
     def log_html_check(args):
@@ -133,7 +144,6 @@ class RunDBCheck(object):
                 print("Experiment {} log exists.".format(exp))
             else:
                 print("Experiment {} log IS MISSING. ---".format(exp))
-
 
 if __name__ == '__main__':
     c = RunDBCheck()
