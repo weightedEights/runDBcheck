@@ -9,7 +9,7 @@ numbers are continuous. If there is a discontinuity, highlight the boundary expe
 
 Usage:
 
-counterLogParse.py [-v] [-h] [-p] [-r <logFileRangeStart> <logFileRangeStop>]
+runDBcheck.py [-v] [-h] [-p] [-r <logFileRangeStart> <logFileRangeStop>]
 
 [-v]
     Print script version
@@ -30,6 +30,7 @@ import sys
 class RunDBCheck(object):
 
     VERSION = 'RunDBCheck.py - 03Aug2017 J.Arndt - Sondrestrom Radar'
+    RUNS_DB_FILENAME = "RUNS.DB"
 
     def __init__(self):
         self.debug = False
@@ -69,10 +70,21 @@ class RunDBCheck(object):
     def check_continuity(path):
         """Check RUNS.DB file Number continuity"""
         print("Will check directory: {}".format(path))
+
+        full_runs_path = os.path.join(path, RunDBCheck.RUNS_DB_FILENAME)
+
         if not os.path.exists(path):
             raise Exception('ERROR: check_continuity: incorrect path')
+
+        if os.path.exists(full_runs_path) and os.path.isfile(full_runs_path):
+            print("RUNS.DB found. Good job.")
+            # call database checker here
+
         else:
-            print("Path exists.")
+            raise Exception('ERROR: check_continuity: RUNS.DB not found.')
+
+    def runs_db_reader(self):
+        pass
 
     @staticmethod
     def log_html_check(args):
