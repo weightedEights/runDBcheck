@@ -78,7 +78,8 @@ class RunDBCheck(object):
                 else:
                     db_actual[new_key] = line.rstrip()
 
-        print(db_actual.sorted())
+        for k,v in sorted(db_actual.items()):
+            print(k, v)
 
     @staticmethod
     def check_continuity(path):
