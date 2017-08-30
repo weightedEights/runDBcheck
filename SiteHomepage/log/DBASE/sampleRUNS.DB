@@ -1,0 +1,123 @@
+[database]
+name=runs.db
+run number=10
+
+[0]
+end date=960511
+end file=11095
+end time=06:01:15
+log file=l0000001.log
+operators=J.Jørgensen E.Kelly
+purpose=Measurements to determine the physics of the magnetotail and the lower-latitude boundary layer(LLBL), coord w/ WIND, GeoTail and IMP-8
+start date=960510
+start file=11066
+start time=19:36:36
+users=N.Maynard/Mission Research Corp., J.Kelly and E.Sanchez/SRI
+
+[1]
+end date=960513
+end file=11108
+end time=18:03:57
+log file=l0000002.log
+operators=J.Jørgensen
+purpose=Measurements of ionospheric parameters coordinated with POLAR, GeoTail and IMP-8 satellites.
+start date=960513
+start file=11102
+start time=12:31:21
+users=J.Kelly and E.Sanchez / SRI
+
+[2]
+end date=960516
+end file=11147
+end time=17:00:35
+log file=L0000004.LOG
+operators=J.Kristensen
+purpose=Measurements of ionospheric parameters coordinated with POLAR, GeoTail and
+start date=960516
+start file=11141
+start time=10:44:45
+users=J.Kelly and E.Sanchez / SRI
+
+[3]
+end date=960519
+end file=11153
+end time=16:01:06
+log file=l0000005.log
+operators=E.Kelly
+purpose=Measurements of ionospheric parameters coordinated with POLAR, GeoTail and IMP-8 satellites.
+start date=960519
+start file=11148
+start time=10:49:49
+users=J.Kelly and E.Sanchez / SRI
+
+[4]
+end date=960527
+end file=11173
+end time=16:00:47
+log file=l0000007.log
+operators=J.Kristensen
+purpose=Measurements of ionospheric parameters coordinated with POLAR, GeoTail and IMP-8 satellites.
+start date=960527
+start file=11168
+start time=10:38:28
+users=J.Kelly and E.Sanchez / SRI
+
+[5]
+end date=960531
+end file=11181
+end time=05:03:15
+log file=L0000008.LOG
+operators=J.Jørgensen
+purpose=Measurements to determine the physics of the magnetotail and the lower-lattitude
+start date=960530
+start file=11174
+start time=22:37:15
+users=J.Kelly and E.Sanchez / SRI
+
+[6]
+end date=960605
+end file=11193
+end time=18:02:33
+log file=l0000009.log
+operators=J.Jørgensen J.Sohn
+purpose=Measurements to study the dynamics of the convection reversal boundary, coordinated with POLAR, WIND, GeoTail, IMP-8 and DMSP satellites.
+start date=960605
+start file=11182
+start time=09:31:44
+users=S.Cumnock/U of Mich., A.Ridley/NCAR and C.R.Clauer/NSF
+
+[7]
+end date=960607
+end file=11200
+end time=17:04:52
+log file=l0000010.log
+operators=J.Kristensen J.Jørgensen
+purpose=Measurements of ionospheric parameters during POLAR cusp passes.
+start date=960607
+start file=11194
+start time=10:46:18
+users=J.Kelly and E.Sanchez / SRI
+
+[8]
+end date=960610
+end file=11207
+end time=17:01:52
+log file=l0000011.log
+operators=J.Jørgensen E.Kelly J.Kristensen
+purpose=Measurements of ionospheric parameters during POLAR cusp passes.
+start date=960610
+start file=11201
+start time=10:46:43
+users=J.Kelly and E.Sanchez / SRI
+
+[9]
+end date=960612
+end file=11223
+end time=03:02:00
+log file=l0000012.log
+operators=J.Sohn
+purpose=Measurements of sporadic E metal layers and the convection electric field.
+start date=960611
+start file=11208
+start time=20:47:54
+users=B.Watkins and D.Bedey / U of Alaska

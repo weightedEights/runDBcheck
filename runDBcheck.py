@@ -25,12 +25,13 @@ runDBcheck.py [-v] [-h] [-p] [-r <logFileRangeStart> <logFileRangeStop>]
 import os
 import argparse
 import sys
+from collections import OrderedDict
 
 
 class RunDBCheck(object):
 
     VERSION = 'RunDBCheck.py - 03Aug2017 J.Arndt - Sondrestrom Radar'
-    RUNS_DB_FILENAME = "RUNS.DB"
+    RUNS_DB_FILENAME = "sampleRUNS.DB"
 
     def __init__(self):
         self.debug = False
@@ -69,16 +70,19 @@ class RunDBCheck(object):
     @staticmethod
     def runs_db_reader(path):
         print("done.")
-        db_actual = {}
+        db_actual = OrderedDict()
         with open(path) as fin:
             for line in fin:
-                if line[0] == '[':
-                    new_key = line.rstrip()
-                    db_actual[new_key] = []
-                else:
-                    db_actual[new_key] = line.rstrip()
+                # throw away empty lines
+                if line != '\n':
+                    # check if it should be a new key, else a new value for the previous key
+                    if line[0] == '[':
+                        new_key = line.rstrip()
+                        db_actual[new_key] = []
+                    else:
+                        db_actual[new_key].append(line.rstrip())
 
-        for k, v in sorted(db_actual.items()):
+        for k, v in db_actual.items():
             print(k, v)
 
     @staticmethod
