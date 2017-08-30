@@ -78,7 +78,7 @@ class RunDBCheck(object):
                 else:
                     db_actual[new_key] = line.rstrip()
 
-        for k,v in sorted(db_actual.items()):
+        for k, v in sorted(db_actual.items()):
             print(k, v)
 
     @staticmethod
