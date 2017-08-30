@@ -70,6 +70,7 @@ class RunDBCheck(object):
     @staticmethod
     def runs_db_reader(path):
         print("done.")
+        # build a copy of the RUNS.DB into an ordered dict
         db_actual = OrderedDict()
         with open(path) as fin:
             for line in fin:
@@ -79,9 +80,18 @@ class RunDBCheck(object):
                     if line[0] == '[':
                         new_key = line.rstrip()
                         db_actual[new_key] = []
+                        # print(line)
                     else:
+                        # using the last key, create and populate a new dictionary as the value
                         db_actual[new_key].append(line.rstrip())
+                        # exp_dict = {}
+                        # items = line.rstrip().split('=')
+                        # key, val = items[0], items[1:]
+                        # exp_dict[key] = val
+                        # db_actual[new_key].append(exp_dict)
+                        # this will create a new dictionary for each line, which is not the goal
 
+        # now check that the "end file" numbers are continuous
         for k, v in db_actual.items():
             print(k, v)
 
